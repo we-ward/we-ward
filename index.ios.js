@@ -20,7 +20,9 @@ const firebaseConfig = {
     messagingSenderId: "745916231980"
   };
 
-const  firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const styles = require('./styles.js')
 
 export default class weward extends Component {
     render() {
@@ -31,6 +33,5 @@ export default class weward extends Component {
         );
     }
 }
-
 
 AppRegistry.registerComponent('weward', () => weward);
